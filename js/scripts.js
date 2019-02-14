@@ -22,13 +22,13 @@ function handleDOBChanged() {
     }
   });
 }
-/*
+
 //convert the date string in the format of dd/mm/yyyy into a JS date object
 function parseDate(dateStr) {
   var dateParts = dateStr.split("/");
   return new Date(dateParts[2], (dateParts[1] - 1), dateParts[0]);
 }
-
+/*
 //is valid date format
 function calculateAge (dateOfBirth, dateToCalculate) {
     var calculateYear = dateToCalculate.getFullYear();
