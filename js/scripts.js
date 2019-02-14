@@ -7,10 +7,10 @@ var navigate = (function() {
   });
 })();
 
-/*$(document).ready(function () {
+$(document).ready(function() {
   handleDOBChanged();
 });
-
+/*
 //listener on date of birth field
 function handleDOBChanged() {
     $('#dob').on('change', function () {
