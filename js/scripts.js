@@ -10,19 +10,19 @@ var navigate = (function() {
 $(document).ready(function() {
   handleDOBChanged();
 });
-/*
+
 //listener on date of birth field
 function handleDOBChanged() {
-    $('#dob').on('change', function () {
-      if (isDate($('#dob').val())) {
-        var age = calculateAge(parseDate($('#dob').val()), new Date());
-      	$("#age").text(age);
-      } else {
-        $("#age").text('');
-      }
-    });
+  $('#dob').on('change', function() {
+    if (isDate($('#dob').val())) {
+      var age = calculateAge(parseDate($('#dob').val()), new Date());
+      $("#age").text(age);
+    } else {
+      $("#age").text('');
+    }
+  });
 }
-
+/*
 //convert the date string in the format of dd/mm/yyyy into a JS date object
 function parseDate(dateStr) {
   var dateParts = dateStr.split("/");
