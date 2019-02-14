@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -19,6 +19,10 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+.indent-20{
+  margin: 10px;
 }
 
 .containers {
