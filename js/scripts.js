@@ -60,23 +60,23 @@ function isDate(txtDate) {
 
   if (dtArray == null)
     return false;
+
+  //Checks for dd/mm/yyyy format.
+  var dtDay = dtArray[1];
+  var dtMonth = dtArray[3];
+  var dtYear = dtArray[5];
   /*
-        //Checks for dd/mm/yyyy format.
-        var dtDay = dtArray[1];
-        var dtMonth = dtArray[3];
-        var dtYear = dtArray[5];
-
-        if (dtMonth < 1 || dtMonth > 12)
-          return false;
-        else if (dtDay < 1 || dtDay > 31)
-          return false;
-        else if ((dtMonth == 4 || dtMonth == 6 || dtMonth == 9 || dtMonth == 11) && dtDay == 31)
-          return false;
-        else if (dtMonth == 2) {
-          var isleap = (dtYear % 4 == 0 && (dtYear % 100 != 0 || dtYear % 400 == 0));
-          if (dtDay > 29 || (dtDay == 29 && !isleap))
+          if (dtMonth < 1 || dtMonth > 12)
             return false;
-        }
+          else if (dtDay < 1 || dtDay > 31)
+            return false;
+          else if ((dtMonth == 4 || dtMonth == 6 || dtMonth == 9 || dtMonth == 11) && dtDay == 31)
+            return false;
+          else if (dtMonth == 2) {
+            var isleap = (dtYear % 4 == 0 && (dtYear % 100 != 0 || dtYear % 400 == 0));
+            if (dtDay > 29 || (dtDay == 29 && !isleap))
+              return false;
+          }
 
-        return true;
-      }
+          return true;
+        }
